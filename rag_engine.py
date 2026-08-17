@@ -33,7 +33,7 @@ vectorstore = PineconeVectorStore(
 retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
 llm = ChatGroq(
-    model_name="llama-3.3-70b-versatile",
+    model_name="openai/gpt-oss-120b",
     groq_api_key=groq_key,
     temperature=0.0
 )
