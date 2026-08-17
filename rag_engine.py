@@ -97,9 +97,12 @@ def query_telecom_rag(query: str):
 
     response = answer_chain.invoke({"context": context_str, "question": query})
 
-    # Path 1: Model explicitly refused based on prompt instruction
+    # Path 1: Model explicitly refused based on prompt instruction.
+    # Even if the model hedges first and only appends the refusal phrase at
+    # the end, treat it as a refusal and show the clean message — not the
+    # rambling lead-up, which reads as a contradictory half-answer.
     if REFUSAL_MESSAGE in response:
-        return response, docs, "REFUSED"
+        return REFUSAL_MESSAGE, docs, "REFUSED"
 
     eval_result = grounding_chain.invoke({"context": context_str, "answer": response}).strip()
 
