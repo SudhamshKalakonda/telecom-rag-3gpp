@@ -1,9 +1,10 @@
 streamlit
+python-dotenv
 langchain
 langchain-community
 langchain-pinecone
 langchain-groq
-pinecone-client
+pinecone
 fastembed
 pypdf
 requests
