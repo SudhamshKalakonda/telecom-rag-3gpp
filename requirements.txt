@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-community
+langchain-pinecone
+langchain-groq
+pinecone-client
+fastembed
+pypdf
+requests
