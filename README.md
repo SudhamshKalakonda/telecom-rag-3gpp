@@ -3,7 +3,7 @@
 
 RAG chatbot over 3GPP TS 23.501 (5G System Architecture), built for near-zero hallucination.
 
-**Live demo:** _add Streamlit Cloud URL here_
+**Live demo:** https://telecom-rag-3gpp-genvlxnpmywtueaenzw3mp.streamlit.app/
 **Repo:** https://github.com/SudhamshKalakonda/telecom-rag-3gpp
 
 ## How it works
